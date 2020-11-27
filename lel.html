@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--allez regarder Kaarism-->
+        <!--chateau noir disponible partout sauf soundcloud parske c'est démodé-->
+    <meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>bande de Bébé</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="VanillaTilt nous montre encore sont talent :O">
+        <meta charset="UTF-8"> 
+        <link href="./stuff/hack_wump.png" rel="icon">
+        <link rel="stylesheet" href="stuff/css.css"> 
+        <div class="animated fadeIn" style="animation-delay: 3,4s;"><i class="fa fa-steam" aria-hidden="true"></i>J'attend la discord hack week de 2020</div>
+                    <div class="gif">
+                      <img src="./stuff/hack_lockups_white.png" alt="Okajunitest" agline="middle" style="margin-left: 40%;">
+                    </div> 
+                    <script src="./stuff/vanilla-tilt.min.js"></script> 
+<script>
+  VanillaTilt.init(document.querySelectorAll(".gif"), {
+        max: 10,
+		speed: 5000
+	});  
+</script>                                                                                       
+            <div class="boite">
+                <canvas id="box-owo" width="500" height="150"><center style="position: absolute;width: 1000px;margin-top: -20px;">
+                </div>
+                    <script> 
+                        let eventBox = document.querySelector(".gif");
+                        let outputContainer = document.querySelector(".boite");
+                        VanillaTilt.init(eventBox);  
+                        eventBox.addEventListener("tiltChange", function (event) {
+                            let li = document.createElement("li");
+                            li.textContent = JSON.stringify(event.detail);
+                            outputContainer.insertBefore(li, outputContainer.firstChild);
+                        /*
+                        le premier qui arrive à me donner un screen d'une valeur négative il à un kado
+                        */
+                        });
+                    </script>
+                    <!--c'est encore une fois un script de vanilla tilte (oui je vais en mettre de partout) -->
+        </div> 
+        </body>
+        </div>   
+        </html>
