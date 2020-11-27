@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="FR"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <link href="hack_wump.png" rel="icon">
+    <title>Application (pas fini)</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Info Application (qui sera multitâches plus d'info sur itch.io)"> 
+    <meta name="author" content="OKΛYA Team/Bros Corps"> 
+ </head>
+ <body>
+     <!--cette appli vas être faite en cé plous plous -->
+<script>
+    console.log("chute de fps à cause de la vitesse de vanilla tilte peut être présent")
+</script>
+     <div class="container">
+     <div class="box"> 
+      <h2 class="name">Beta</h2>
+      <a href="https://okajuni.itch.io/okaya-app" class="acheter">Itch.IO</a>
+      <!--itch.io surtout car c'est gratuit pas comme les 100 balles de steam + les taxes chaques mois-->
+      <img src="itch.png" class="product">
+     </div>
+     <div class="box"> 
+      <h2 class="name">final (trailer)</h2>
+      <a href="https://www.carwow.co.uk/404" class="acheter">Regarder</a>
+      <!--j'ai pas fait de trailer pour l'instant oof-->
+      <img src="T.png" class="product">
+     </div>  
+    </div>
+<script src="vanilla-tilt.min.js"></script> 
+<script>
+  VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 30,
+		speed: 4000
+	});  
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400,500,600,700,800,900&display=swap');
+* 
+{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+}
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black; 
+    text-shadow: 1px 1px 0px #0b9692, -1px -1px 0px red;
+}
+
+
+.container 
+{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d; 
+}
+.container .box
+{ 
+    position: relative; 
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+.container .box:hover::before,
+.container .box:hover::after
+{
+ opacity: 0.04; 
+}
+.container .box .name 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color:white;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s; 
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .name
+{
+    top: 40px; 
+    opacity: 1;
+}
+.container .box .acheter 
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: white;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 1s;
+    opacity: 0;
+    z-index: 10;
+}
+.container .box:hover .acheter
+{
+  bottom: 0px;
+  opacity: 1;
+}
+.acheter:hover
+{
+      box-shadow: 0 0 30px  rgb(253, 253, 253), 0 0 50px rgb(255, 255, 255),0 0 80px rgb(255, 255, 255);
+      transition-delay: 1.6s;
+
+}
+.container .acheter
+{
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+      font-size: 24px; 
+      overflow: hidden; 
+      transition:1s;
+}
+.container .box .product
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,0px);
+}
+.container .box:hover .product
+{
+    transform: translate3d(-50%,-50%,100px);
+}
