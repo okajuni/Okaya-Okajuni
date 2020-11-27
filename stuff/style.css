@@ -1,0 +1,42 @@
+  .sm a{
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #fffdfd;
+    margin: 100 0x;
+    transition: .3s linear;
+    position: relative;
+    box-shadow: 1px 1px #2e2d2df6 1px 1px rgb(29, 28, 28)102, 98, 98;
+  }
+  
+  .sm a::before, .sm a::after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+  }
+  
+  .sm a:hover{
+    transform: scale(.7);
+  }
+  
+  .sm a:hover::before{
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+  }
+  
+  .sm a:hover::after{
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+  }
